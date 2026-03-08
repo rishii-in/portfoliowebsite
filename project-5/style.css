@@ -1,0 +1,218 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body{
+    background:#081b29;
+    animation: slideUp 1.5s ease;
+    
+}
+
+.header{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    padding:30px 10%;
+    background:transparent;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.header h1{
+    color:white;
+    font-size: 40px;
+    border-bottom: 2px solid #38bdf8;
+}
+
+.header h1 span{
+    color:#38bdf8;
+    margin-left:2px;
+}
+
+.header ul{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header ul li{
+    margin-left:35px;
+    list-style:none;
+    font-size: 18px;
+    
+}
+
+.header ul li a{
+    text-decoration: none;
+    color:white;
+    transition:0.5s;
+}
+
+.header ul li a:hover{
+    color:#38bdf8;
+    transition: .5s;
+}
+
+.content{
+    height:100vh;
+    width:100%;
+    display:flex;
+    align-items:center;
+}
+
+.content .content_text{
+    padding:20px 10%;
+    
+}
+
+.content .content_text  h1{
+    color:white;
+    font-size: 50px;
+    font-weight: 600px;
+    margin-bottom:8px;
+}
+
+.content .content_text h3{
+    color:white;
+    font-size:25px;
+    margin-bottom:15px;
+}
+
+.content .content_text h3 span{
+    color:#38bdf8;
+    font-style:italic;
+}
+
+.content .content_text p{
+    color:white;
+    line-height: 30px;
+    width:600px;
+    font-size: 17px;
+    margin-bottom:25px;
+}
+
+.contact{
+    text-decoration: none;
+    display:inline-flex;
+    background:transparent;
+    padding:15px 30px;
+    border:2px solid #38bdf8;
+    border-radius:25px;
+    color:#38bdf8;
+    transition: 0.5s;
+    font-weight: 600;
+    box-shadow:5px 5px 10px rgba(225, 217, 217, 0.1); 
+}
+
+.contact1{
+    text-decoration: none;
+    display:inline-flex;
+    background:#38bdf8;
+    border:2px solid #38bdf8;
+    padding:15px 30px;
+    border-radius:25px;
+    color:white;
+    transition: 0.5s;
+    font-weight: 600;
+    margin-left:15px;
+    box-shadow:5px 5px 10px rgba(225, 217, 217, 0.1);
+}
+
+.contact:hover{
+    background:#38bdf8;
+    transition: 0.5s;
+    color:white;
+}
+
+.contact1:hover{
+     background:transparent;
+    transition: 0.5s;
+    color:#38bdf8;
+    border:2px solid #38bdf8;
+}
+
+.icons{
+    padding:10px 10px;
+    margin-top:20px;
+    color:white;
+      transition: 0.5s;
+}
+
+.icons a{
+    padding:8px;
+    font-size: 20px;
+    transition: 0.5s;
+    color:#38bdf8;
+    border:2px solid #38bdf8;
+    margin-right:15px;
+    border-radius:50%;
+}
+
+.icons a:hover{
+    background: #38bdf8;
+    color:white;
+    transition: .5s;
+}
+
+.icons  i:hover{
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.pro_img{
+    width:500px;
+}
+
+.pro_img img{
+width:350px;
+    height:350px;
+    border-radius:50%;
+    object-fit:cover;
+    border:2px solid white;
+    box-shadow:0 0 25px #38bdf8;
+}
+
+@keyframes slideUp{
+    from{
+        transform:translateY(100px);
+        opacity:0;
+    }
+    to{
+        transform:translateY(0);
+        opacity:1;
+    }
+}
+
+.typing{
+    width:20ch;
+    overflow:hidden;
+    white-space:nowrap;
+    border-right:3px solid #38bdf8;
+    font-size:30px;
+    font-family:monospace;
+    animation:typing 3s steps(20) infinite alternate, blink .5s step-end infinite alternate;
+}
+
+@keyframes typing{
+    from{
+        width:0;
+    }
+}
+
+@keyframes blink{
+    50%{
+        border-color:transparent;
+    }
+}
+
+
+
+
+
+
